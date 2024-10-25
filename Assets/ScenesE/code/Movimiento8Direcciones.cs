@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Movimiento8Direcciones : MonoBehaviour
 {
-    public float velocidadMovimiento = 5f; // Velocidad de movimiento del personaje
+    public float velocidadMovimiento = 5f; 
     private Rigidbody rb;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>(); // Obtener el componente Rigidbody
+        rb = GetComponent<Rigidbody>(); 
     }
 
     void Update()
@@ -19,14 +19,13 @@ public class Movimiento8Direcciones : MonoBehaviour
 
     void Mover()
     {
-        // Obtener entrada de las teclas de movimiento (WASD o flechas)
-        float movimientoHorizontal = Input.GetAxis("Horizontal"); // A/D o flechas izquierda/derecha
-        float movimientoVertical = Input.GetAxis("Vertical"); // W/S o flechas arriba/abajo
+        
+        float movimientoHorizontal = Input.GetAxis("Horizontal"); 
+        float movimientoVertical = Input.GetAxis("Vertical");
 
-        // Crear un vector de movimiento basado en la entrada del jugador
+        
         Vector3 movimiento = new Vector3(movimientoHorizontal, 0, movimientoVertical).normalized;
 
-        // Mover al personaje usando el Rigidbody
         rb.MovePosition(transform.position + movimiento * velocidadMovimiento * Time.deltaTime);
     }
 

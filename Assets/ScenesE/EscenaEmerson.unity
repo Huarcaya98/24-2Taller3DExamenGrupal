@@ -223,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 154627432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.72}
+  m_LocalPosition: {x: 0, y: -0.26, z: -0.72}
   m_LocalScale: {x: 13.056, y: 13.056, z: 13.056}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -640,7 +640,7 @@ MonoBehaviour:
   proyectilPrefab: {fileID: 4730066662418439426, guid: c4ea02b756fc80a4eaf6fa1756cb53bc,
     type: 3}
   puntoDeDisparo: {fileID: 1284637214}
-  velocidadDisparo: 20
+  velocidadDisparo: 21.7
 --- !u!114 &1173536272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,7 +972,7 @@ PrefabInstance:
     - target: {fileID: 1760302647809082523, guid: f6b2525696ed5a84689d58295eb4c856,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4914026
+      value: 1.586
       objectReference: {fileID: 0}
     - target: {fileID: 1760302647809082523, guid: f6b2525696ed5a84689d58295eb4c856,
         type: 3}
