@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/ScenesJ/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/ScenesJ/DerrotaJ.unity
+    guid: b4d29321b60d2a749854733a36f82f00
+  - enabled: 1
+    path: Assets/ScenesJ/VictoriaConTumiJ.unity
+    guid: 207240012965c0344b7ee1ba24cf0b65
+  - enabled: 1
+    path: Assets/ScenesJ/VictoriaSinTumiJ.unity
+    guid: b90ace8e790987741bbcecf45ce0c87f
+  - enabled: 1
+    path: Assets/ScenesJ/Level2J.unity
+    guid: 1c2366749d554a24b933e471dbed8aba
   m_configObjects: {}

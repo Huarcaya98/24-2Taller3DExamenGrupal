@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class AntorchaNivel2 : MonoBehaviour
 {
     private GestorAntorcha gestorJuego;
     private bool encendida = false;
+    [SerializeField] private AudioSource fxSource;
+    [SerializeField] private AudioClip clickSound;
 
     public void SetGestorJuego(GestorAntorcha gestor)
     {
@@ -23,11 +26,17 @@ public class AntorchaNivel2 : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnCollisionStay(Collision collision)
     {
-        if (other.CompareTag("Player") && Input.GetKeyDown(KeyCode.E)) // Por ejemplo, el jugador presiona 'E' para encender
+        if (collision.gameObject.CompareTag("Bala") && Input.GetKeyDown(KeyCode.E)) // Por ejemplo, el jugador presiona 'E' para encender
         {
+            fxSource.PlayOneShot(clickSound);
             Encender();
         }
+    }
+
+    private void PlaySoundButton()
+    {
+        fxSource.PlayOneShot(clickSound);
     }
 }

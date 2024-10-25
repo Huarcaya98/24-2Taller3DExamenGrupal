@@ -7,11 +7,11 @@ public class GestorAntorcha : MonoBehaviour
 {
     [SerializeField] private GameObject puerta; // La puerta que se abrirá
     [SerializeField] private AntorchaNivel2[] antorchas; // Array de las antorchas
-    [SerializeField] private string escenaDerrota = "Derrota"; // Nombre de la escena de derrota
+    [SerializeField] private string escenaDerrota; // Nombre de la escena de derrota
 
     private int indiceAntorchaActual = 0; // Controla el índice de la antorcha actual
 
-    void Start()
+    void Awake()
     {
         // Inicializamos todas las antorchas
         foreach (AntorchaNivel2 antorcha in antorchas)
